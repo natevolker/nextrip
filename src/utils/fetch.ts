@@ -1,10 +1,10 @@
-import makeFetchHappen from 'make-fetch-happen'
-import { normalize } from 'path'
 import { toError } from './toError'
 
-const cachedFetch = makeFetchHappen.defaults({
-  cachePath: normalize(`.next/cache/fetch-cache`),
-})
+const cachedFetch = window.fetch
+// this doesn't work on vercel, so i'm removing it for now
+// const cachedFetch = makeFetchHappen.defaults({
+//   cachePath: normalize(`.next/cache/fetch-cache`),
+// })
 
 export const fetch = async <T>(
   input: RequestInfo,
@@ -13,7 +13,7 @@ export const fetch = async <T>(
   let response: Response | null = null
 
   try {
-    response = (await cachedFetch(input, init as makeFetchHappen.FetchOptions)) as unknown as Response
+    response = (await cachedFetch(input, init)) as unknown as Response
   } catch (err) {
     throw toError(err, { message: 'Failed to fetch', input, init })
   }
