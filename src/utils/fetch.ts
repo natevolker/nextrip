@@ -1,6 +1,7 @@
+import crossFetch from 'cross-fetch'
 import { toError } from './toError'
 
-const cachedFetch = window.fetch
+const cachedFetch = crossFetch
 // this doesn't work on vercel, so i'm removing it for now
 // const cachedFetch = makeFetchHappen.defaults({
 //   cachePath: normalize(`.next/cache/fetch-cache`),
