@@ -171,6 +171,7 @@
 }
 
 /* try to use system colors */
+/*
 @supports (color-scheme: light dark) and (color: Canvas) { :root { --window-background-color: Canvas; } }
 @supports (color-scheme: light dark) and (color: CanvasText) { :root { --text-color: CanvasText; } }
 @supports (color-scheme: light dark) and (color: Highlight) { :root { --keyboard-focus-indicator-color: Highlight; } }
@@ -208,7 +209,7 @@
 @supports (color: -apple-system-mint) { :root { --mint: -apple-system-mint; } }
 @supports (color: -apple-system-cyan) { :root { --cyan: -apple-system-cyan; } }
 @supports (color: -apple-system-gray) { :root { --gray-1: -apple-system-gray; } }
-
+*/
 
 /* fonts */
 :root {
