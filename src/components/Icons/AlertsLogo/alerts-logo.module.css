@@ -1,0 +1,7 @@
+.fill {
+  fill: var(--secondary-label-color);
+}
+
+:global(a.active) .fill {
+  fill: var(--control-accent-color);
+}

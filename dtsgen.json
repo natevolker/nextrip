@@ -1,0 +1,16 @@
+{
+  "plugins": {
+    "@dtsgenerator/replace-namespace": {
+      "map": [
+        {
+          "from": ["Components"],
+          "to": ["NextTrip"]
+        },
+        {
+          "from": ["Paths"],
+          "to": ["NextTrip"]
+        }
+      ]
+    }
+  }
+}

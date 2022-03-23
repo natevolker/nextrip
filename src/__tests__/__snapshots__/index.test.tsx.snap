@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with all args 1`] = `
+<div>
+  <form
+    class="sidebar sidebar"
+  >
+    <h2>
+      Real-Time Departures
+    </h2>
+    <label
+      class="select  "
+      for="route"
+      title=""
+    >
+      <span
+        class="label"
+      >
+        Route
+      </span>
+      <select
+        class="select-element"
+        name="route"
+        required=""
+      >
+        <option
+          disabled=""
+          value=""
+        >
+          Select a Route
+        </option>
+      </select>
+    </label>
+    <label
+      class="select disabled "
+      for="direction"
+      title="You must first select a route"
+    >
+      <span
+        class="label"
+      >
+        Direction
+      </span>
+      <select
+        class="select-element"
+        disabled=""
+        name="direction"
+        required=""
+      >
+        <option
+          disabled=""
+          value=""
+        >
+          Select a Direction
+        </option>
+      </select>
+    </label>
+    <label
+      class="select disabled "
+      for="stop"
+      title="You must first select a route and direction"
+    >
+      <span
+        class="label"
+      >
+        Stop
+      </span>
+      <select
+        class="select-element"
+        disabled=""
+        name="stop"
+        required=""
+      >
+        <option
+          disabled=""
+          value=""
+        >
+          Select a Stop
+        </option>
+      </select>
+    </label>
+  </form>
+  <div
+    class="primary primary"
+  >
+    <div
+      class="center"
+    >
+      Select a Route, Direction, and Stop to see departure times.
+    </div>
+    <div
+      class="out"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders with no args 1`] = `
+<div>
+  <form
+    class="sidebar sidebar"
+  >
+    <h2>
+      Real-Time Departures
+    </h2>
+    <label
+      class="select  "
+      for="route"
+      title=""
+    >
+      <span
+        class="label"
+      >
+        Route
+      </span>
+      <select
+        class="select-element"
+        name="route"
+        required=""
+      >
+        <option
+          disabled=""
+          value=""
+        >
+          Select a Route
+        </option>
+      </select>
+    </label>
+    <label
+      class="select disabled "
+      for="direction"
+      title="You must first select a route"
+    >
+      <span
+        class="label"
+      >
+        Direction
+      </span>
+      <select
+        class="select-element"
+        disabled=""
+        name="direction"
+        required=""
+      >
+        <option
+          disabled=""
+          value=""
+        >
+          Select a Direction
+        </option>
+      </select>
+    </label>
+    <label
+      class="select disabled "
+      for="stop"
+      title="You must first select a route and direction"
+    >
+      <span
+        class="label"
+      >
+        Stop
+      </span>
+      <select
+        class="select-element"
+        disabled=""
+        name="stop"
+        required=""
+      >
+        <option
+          disabled=""
+          value=""
+        >
+          Select a Stop
+        </option>
+      </select>
+    </label>
+  </form>
+  <div
+    class="primary primary"
+  >
+    <div
+      class="center"
+    >
+      Select a Route, Direction, and Stop to see departure times.
+    </div>
+    <div
+      class="out"
+    />
+  </div>
+</div>
+`;

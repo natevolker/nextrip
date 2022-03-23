@@ -1,0 +1,526 @@
+/* define custom properties */
+
+/* colors */
+:root {
+  --red: rgb(255, 59, 48);
+  --orange: rgb(255, 149, 0);
+  --yellow: rgb(255, 204, 0);
+  --green: rgb(40, 205, 65);
+  --mint: rgb(0,199,190);
+  --teal: rgb(48, 176, 199);
+  --cyan: rgb(50,173,230);
+  --blue: rgb(0, 122, 255);
+  --indigo: rgb(88, 86, 214);
+  --purple: rgb(175, 82, 222);
+  --pink: rgb(255, 45, 85);
+  --brown: rgb(162, 132, 94);
+
+  --gray-1: rgb(142, 142, 147);
+  --gray-2: rgb(174, 174, 178);
+  --gray-3: rgb(199, 199, 204);
+  --gray-4: rgb(209, 209, 214);
+  --gray-5: rgb(229, 229, 234);
+  --gray-6: rgb(242, 242, 247);
+
+  /* The text of a label containing primary content. */
+  --label-color: rgba(0, 0, 0, 0.85);
+  /* The text of a label of lesser importance than a primary label, such as a label used to represent a subheading or additional information. */
+  --secondary-label-color: rgba(0, 0, 0, 0.75);
+  /* 	The text of a label of lesser importance than a secondary label such as a label used to represent disabled text. */
+  --tertiary-label-color: rgba(0, 0, 0, 0.5);
+  /* 	The text of a label of lesser importance than a tertiary label such as watermark text. */
+  --quaternary-label-color: rgba(0, 0, 0, 0.0625);
+  /* A link to other content. */
+  --link-color: #084FD1;
+  /* 	A placeholder string in a control or text view. */
+  --placeholder-text-color: rgba(0, 0, 0, 0.5);
+  /* The text in the window’s titlebar area. */
+  --window-frame-text-color: rgba(0, 0, 0, 0.85);
+  /* 	The text of a selected menu. */
+  --selected-menu-item-text-color: #FFFFFF;
+  /* The text on a selected surface in a list or table. */
+  --alternate-selected-control-text-color: #FFFFFF;
+  /* The text of a header cell in a table. */
+  --header-text-color: rgba(0, 0, 0, 0.85);
+  /* A separator between different sections of content. */
+  --separator-color: rgba(0, 0, 0, 0.25);
+  /* The gridlines of an interface element such as a table. */
+  --grid-color: #DFDFDF;
+  /* The text in a document. */
+  --text-color: #000000;
+  /* Text background. */
+  --text-background-color: #FFFFFF;
+  /* Selected text. */
+  --selected-text-color: #000000;
+  /* 	The background of selected text. */
+  --selected-text-background-color: #A4CCFE;
+  /* A background for selected text in a non-key window or view. */
+  --unemphasized-selected-text-background-color: #D3D3D3;
+  /* Selected text in a non-key window or view. */
+  --unemphasized-selected-text-color: #000000;
+  /* 	The background of a window. */
+  --window-background-color: #E7E7E7;
+  /* The background behind a document’s content. */
+  --under-page-background-color: rgba(131, 131, 131, 0.9);
+  /* The background of a large interface element, such as a browser or table. */
+  --control-background-color: #FFFFFF;
+  /* The background for selected content in a key window or view. */
+  --selected-content-background-color: #0749D9;
+  /* The selected content in a non-key window or view. */
+  --unemphasized-selected-content-background-color: #D3D3D3;
+  /* The backgrounds of alternating rows or columns in a list, table, or collection view. */
+  --alternating-content-background-color: #F1F2F2;
+  /* The color of a find indicator. */
+  --find-highlight-color: #FFFF0A;
+  /* The surface of a control. */
+  --control-color: #FFFFFF;
+  --control-color-hover: rgba(255, 255, 255, 0.875);
+  --control-color-active: rgba(255, 255, 255, 0.75);
+
+  /* The text of a control that isn’t disabled. */
+  --control-text-color: rgba(0, 0, 0, 0.85);
+  /* The surface of a selected control. */
+  --selected-control-color: #A4CCFE;
+  /* The text of a selected control. */
+  --selected-control-text-color: rgba(0, 0, 0, 0.85);
+  /* The text of a control that’s disabled. */
+  --disabled-control-text-color: rgba(0, 0, 0, 0.5);
+  /* The ring that appears around the currently focused control when using the keyboard for interface navigation. */
+  --keyboard-focus-indicator-color: rgba(7, 75, 240, 0.5);
+  /* The accent color selected by the user in system preferences. */
+  --control-accent-color: #0A5FFE;
+
+  --content-background-color: #EEEEEE;
+  --header-background-color: #FBFBFB;
+  --sidebar-background-color: #F6F6F6;
+
+  --brand-primary: #006dda;
+  --brand-secondary: #6cb5fe;
+  --brand-tertiary: #b5dafe;
+  --brand-quaternary: #048;
+}
+
+/* dark mode colors */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --red: rgb(255, 69, 58);
+    --orange: rgb(255, 159, 10);
+    --yellow: rgb(255, 214, 10);
+    --green: rgb(50, 215, 75);
+    --mint: rgb(102,G 212,B 207);
+    --teal: rgb(64, 200, 224);
+    --cyan: rgb(100,G 210,B 255);
+    --blue: rgb(10, 132, 255);
+    --indigo: rgb(94, 92, 230);
+    --purple: rgb(191, 90, 242);
+    --pink: rgb(255, 55, 95);
+    --brown: rgb(172, 142, 104);
+
+    --gray-1: rgb(142, 142, 147);
+    --gray-2: rgb(99, 99, 102);
+    --gray-3: rgb(72, 72, 74);
+    --gray-4: rgb(58, 58, 60);
+    --gray-5: rgb(44, 44, 46);
+    --gray-6: rgb(28, 28, 30);
+
+    --label-color: rgba(255, 255, 255, 0.85);
+    --secondary-label-color: rgba(255, 255, 255, 0.75);
+    --tertiary-label-color: rgba(255, 255, 255, 0.5);
+    --quaternary-label-color: rgba(255, 255, 255, 0.0625);
+    --link-color: #3486FE;
+    --placeholder-text-color: rgba(255, 255, 255, 0.5);
+    --window-frame-text-color: rgba(255, 255, 255, 0.85);
+    --selected-menu-item-text-color: #FFFFFF;
+    --alternate-selected-control-text-color: #FFFFFF;
+    --header-text-color: #FFFFFF;
+    --separator-color: rgba(255, 255, 255, 0.0625);
+    --grid-color: #141414;
+    --text-color: #FFFFFF;
+    --text-background-color: #161616;
+    --selected-text-color: #FFFFFF;
+    --selected-text-background-color: #304F78;
+    --unemphasized-selected-text-background-color: #363636;
+    --unemphasized-selected-text-color: #FFFFFF;
+    --window-background-color: #252525;
+    --under-page-background-color: #1D1D1D;
+    --control-background-color: #161616;
+    --selected-content-background-color: #053FC5;
+    --unemphasized-selected-content-background-color: #363636;
+    --alternating-content-background-color: rgba(255, 255, 255, 0.0625);
+    --find-highlight-color: #FFFF0A;
+    /* --control-color: rgba(255, 255, 255, 0.5); */
+    --control-color: rgba(255, 255, 255, 0.0625);
+    --control-color-hover: rgba(255, 255, 255, 0.125);
+    --control-color-active: rgba(255, 255, 255, 0.25);
+    --control-text-color: rgba(255, 255, 255, 0.85);
+    --selected-control-color: #304F78;
+    --selected-control-text-color: rgba(255, 255, 255, 0.85);
+    --disabled-control-text-color: rgba(255, 255, 255, 0.5);
+    --keyboard-focus-indicator-color: rgba(27, 149, 254, 0.5);
+    --control-accent-color: #518eff;
+
+    --content-background-color: #1E1E1E;
+    --header-background-color: #2c2930;
+    --sidebar-background-color: #221D28;
+
+    --brand-primary: #6cb5fe;
+    --brand-secondary: #006dda;
+    --brand-tertiary: #048;
+    --brand-quaternary: #b5dafe;
+  }
+}
+
+/* try to use system colors */
+@supports (color-scheme: light dark) and (color: Canvas) { :root { --window-background-color: Canvas; } }
+@supports (color-scheme: light dark) and (color: CanvasText) { :root { --text-color: CanvasText; } }
+@supports (color-scheme: light dark) and (color: Highlight) { :root { --keyboard-focus-indicator-color: Highlight; } }
+@supports (color: -webkit-focus-ring-color) { :root { --keyboard-focus-indicator-color: -webkit-focus-ring-color; } }
+@supports (color: -apple-system-label) { :root { --label-color: -apple-system-label; } }
+@supports (color: -apple-system-secondary-label) { :root { --secondary-label-color: -apple-system-secondary-label; } }
+@supports (color: -apple-system-tertiary-label) { :root { --tertiary-label-color: -apple-system-tertiary-label; } }
+@supports (color: -apple-system-quaternary-label) { :root { --quaternary-label-color: -apple-system-quaternary-label; } }
+@supports (color: -apple-system-placeholder-text) { :root { --placeholder-text-color: -apple-system-placeholder-text; } }
+@supports (color: -apple-system-grid) { :root { --grid-color: -apple-system-grid; } }
+@supports (color: -apple-system-header-text) { :root { --header-text-color: -apple-system-header-text; } }
+@supports (color: -apple-system-separator) { :root { --separator-color: -apple-system-separator; } }
+@supports (color: -apple-system-text-background) { :root { --text-background-color: -apple-system-text-background; } }
+@supports (color: -apple-system-background) { :root { --window-background-color: -apple-system-background; } }
+@supports (color: -apple-system-control-background) { :root { --control-background-color: -apple-system-control-background; } }
+@supports (color: -apple-system-control-accent) { :root { --control-accent-color: -apple-system-control-accent; } }
+@supports (color: -apple-system-selected-text) { :root { --selected-text-color: -apple-system-selected-text; } }
+@supports (color: -apple-system-selected-text-background) { :root { --selected-text-background-color: -apple-system-selected-text-background; } }
+@supports (color: -apple-system-selected-content-background) { :root { --selected-content-background-color: -apple-system-selected-content-background; } }
+@supports (color: -apple-system-find-highlight-background) { :root { --find-highlight-color: -apple-system-find-highlight-background; } }
+@supports (color: -apple-system-unemphasized-selected-text) { :root { --unemphasized-selected-text-color: -apple-system-unemphasized-selected-text; } }
+@supports (color: -apple-system-unemphasized-selected-text-background) { :root { --unemphasized-selected-text-background-color: -apple-system-unemphasized-selected-text-background; } }
+@supports (color: -apple-system-unemphasized-selected-content-background) { :root { --unemphasized-selected-content-background-color: -apple-system-unemphasized-selected-content-background; } }
+@supports (color: -apple-system-odd-alternating-content-background) { :root { --alternating-content-background-color: -apple-system-odd-alternating-content-background; } }
+@supports (color: -apple-system-blue) { :root { --blue: -apple-system-blue; } }
+@supports (color: -apple-system-brown) { :root { --brown: -apple-system-brown; } }
+@supports (color: -apple-system-teal) { :root { --teal: -apple-system-teal; } }
+@supports (color: -apple-system-red) { :root { --red: -apple-system-red; } }
+@supports (color: -apple-system-orange) { :root { --orange: -apple-system-orange; } }
+@supports (color: -apple-system-green) { :root { --green: -apple-system-green; } }
+@supports (color: -apple-system-pink) { :root { --pink: -apple-system-pink; } }
+@supports (color: -apple-system-purple) { :root { --purple: -apple-system-purple; } }
+@supports (color: -apple-system-yellow) { :root { --yellow: -apple-system-yellow; } }
+@supports (color: -apple-system-indigo) { :root { --indigo: -apple-system-indigo; } }
+@supports (color: -apple-system-mint) { :root { --mint: -apple-system-mint; } }
+@supports (color: -apple-system-cyan) { :root { --cyan: -apple-system-cyan; } }
+@supports (color: -apple-system-gray) { :root { --gray-1: -apple-system-gray; } }
+
+
+/* fonts */
+:root {
+  --sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  --serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  --monospace: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  --font-family: var(--sans-serif);
+}
+
+/* animations */
+@keyframes slide-in {
+  from {
+    transform-origin: top center;
+    transform: rotateX(0deg) translate(0, 0);
+    opacity: 0;
+  }
+
+  0% {
+    transform: rotateX(-15deg) translate(0, -0.5rem);
+  }
+
+  to {
+    transform: rotateX(0deg) translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: rotateX(0deg) translate(0, 0);
+    opacity: 1;
+  }
+
+  99.9% {
+    transform: rotateX(-15deg) translate(0, 0.5rem);
+  }
+
+  to {
+    transform: rotateX(0deg) translate(0, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+:root {
+  --animation-duration: 0.25s;
+  --slide-in: var(--animation-duration) ease slide-in forwards;
+  --slide-out: var(--animation-duration) ease slide-out forwards;
+  --fade-in: var(--animation-duration) ease fade-in forwards;
+  --fade-out: var(--animation-duration) ease fade-in backwards;
+}
+
+/* etc */
+:root {
+  color-scheme: light dark;
+  --inset-inline: 0;
+  --inset-block: 1rem;
+  --border-radius: 0.25rem;
+  --border-color: var(--separator-color);
+}
+
+/* apply global styles */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-family: var(--sans-serif);
+  color: var(--text-color);
+}
+
+html {
+  box-sizing: border-box;
+  background: var(--window-background-color);
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:visited {
+  color: var(--indigo);
+}
+
+a.active {
+  color: var(--control-accent-color);
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: var(--font-family);
+  color: var(--control-text-color);
+  background-color: var(--control-color);
+  border-color: var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+:is(select, input, textarea):not(:disabled):is(:hover, :focus) {
+  background-color: var(--control-color-hover);
+}
+
+:is(select, input, textarea):not(:disabled):active {
+  background-color: var(--control-color-active);
+}
+
+button {
+  font-size: 1rem;
+  color: var(--content-background-color);
+  background-color: var(--brand-primary);
+  border-width: 1px;
+  padding: var(--inset-block);
+  cursor: pointer;
+  position: relative;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--brand-secondary);
+}
+
+button:active {
+  background-color: var(--brand-tertiary);
+}
+
+label {
+  color: var(--label-color);
+}
+
+pre,
+code {
+  font-family: var(--monospace);
+}
+
+hr {
+  inline-size: 100%;
+  block-size: 0.0625em;
+  background-color: var(--separator-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-inline: var(--inset-inline);
+  margin-block: var(--inset-block);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 1.75em;
+  line-height: calc((2/1.75));
+  margin-block: calc(1.75 * var(--inset-block));
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: calc((1.75/1.5));
+  margin-block: calc(1.5 * var(--inset-block));
+}
+
+h3 {
+  font-size: 1.375rem;
+  line-height: calc(1.5/1.375);
+  margin-block: calc(1.375 * var(--inset-block));
+}
+
+.subtitle {
+  font-weight: normal;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+table {
+  border-spacing: 0;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--control-background-color);
+  width: calc(100% - (2 * var(--inset-inline)) - 2px);
+  margin: var(--inset-block) var(--inset-inline);
+}
+
+thead {
+  position: relative;
+}
+
+thead::before,
+thead::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  left: -1px;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  display: block;
+  z-index: 0;
+}
+
+thead::before {
+  background-color: var(--sidebar-background-color);
+  bottom: -1px;
+}
+
+thead::after {
+  bottom: 0px;
+  background-color: var(--control-color);
+  border: 1px solid var(--border-color);
+}
+
+thead > tr {
+  position: relative;
+  z-index: 1;
+}
+
+td, th {
+  text-align: start;
+  box-sizing: content-box;
+  font-size: 1em;
+  line-height: 1.1875;
+  padding: 12px var(--inset-inline);
+  border: 0;
+}
+
+/* odd rows */
+:is(table, tbody) > tr > td {
+  background-color: var(--alternating-content-background-color);
+}
+
+/* even rows */
+:is(table, tbody) > tr:nth-child(even) > td {
+  background-color: var(--even-alternating-content-background-color);
+}
+
+/* first row, first column */
+:is(table, table > :is(thead, tbody):first-child) > tr:first-child > :is(th, td):first-child {
+  border-radius: calc(var(--border-radius) - 1px) 0 0 0;
+}
+
+/* first row, last column */
+:is(table, table > :is(thead, tbody):first-child) > tr:first-child > :is(th, td):last-child {
+  border-radius: 0 calc(var(--border-radius) - 1px) 0 0;
+}
+
+/* last row, last column */
+:is(table, table > :is(tbody, tfoot):last-child) > tr:last-child > :is(th, td):last-child {
+  border-radius: 0 0 calc(var(--border-radius) - 1px) 0;
+}
+
+/* last row, first column */
+:is(table, table > :is(tbody, tfoot):last-child) > tr:last-child > :is(th, td):first-child {
+  border-radius: 0 0 0 calc(var(--border-radius) - 1px);
+}
+
+.align-end:is(td, th) {
+  text-align: end;
+}
+
+thead th {
+  text-transform: uppercase;
+}
+
+thead :is(td, th) {
+  color: var(--header-text-color);
+  background-color: var(--header-background-color);
+}
+
+::placeholder {
+  color: var(--placeholder-text-color);
+}
+
+:focus {
+  outline-color: var(--keyboard-focus-indicator-color); 
+}
+
+:focus-visible {
+  outline-color: var(--keyboard-focus-indicator-color); 
+  outline-style: solid;
+}
+
+:focus-visible :focus {
+  outline-color: transparent;
+}
+
+::selection {
+  color: var(--selected-text-color);
+  background-color: var(--selected-text-background-color);
+}
+
+:disabled {
+  color: var(--disabled-control-text-color);
+  opacity: 0.5;
+}
+
+.selected {
+  color: var(--selected-text);
+  background-color: var(--selected-content-background);
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+

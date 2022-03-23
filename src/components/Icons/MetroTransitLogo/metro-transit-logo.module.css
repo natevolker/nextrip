@@ -1,0 +1,21 @@
+.circle {
+  fill: #e50020;
+}
+.circle-T {
+  fill: #fff;
+}
+.metro {
+  fill: #004290;
+}
+.transit {
+  fill: #e50020;
+}
+
+@media (prefers-color-scheme: dark) {
+  .metro {
+    fill: #fff;
+  }
+  .transit {
+    fill: #fff;
+  }
+}

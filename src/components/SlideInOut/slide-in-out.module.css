@@ -1,0 +1,7 @@
+.in {
+  animation: var(--slide-in);
+}
+
+.out {
+  animation: var(--slide-out);
+}

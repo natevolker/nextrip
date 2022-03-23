@@ -1,0 +1,44 @@
+.header {
+  --inset-inline: 1rem;
+  display: contents;
+}
+
+.branding,
+.content {
+  background-color: var(--header-background-color);
+}
+
+.branding {
+  padding-inline: var(--inset-inline);
+}
+
+.content {
+  display: flex;
+  padding-inline: calc(var(--inset-inline) / 2);
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content > a {
+  display: grid;
+  border-radius: var(--border-radius);
+  gap: calc(var(--inset-inline) / 2);
+  padding: calc(var(--inset-inline) / 2);
+  grid-auto-flow: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.content > a:not(:global(.active)) {
+  color: var(--secondary-label-color);
+}
+
+.content > a:hover {
+  background-color: var(--control-color);
+}
+
+.logo {
+  height: 1.5rem;
+  display: block;
+  margin-block: var(--inset-block);
+}

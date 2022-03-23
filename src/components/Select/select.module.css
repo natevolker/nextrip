@@ -1,0 +1,78 @@
+.select {
+  --primary-text-color: var(--text-color);
+  --secondary-text-color: var(--secondary-label-color);
+  position: relative;
+  display: flow-root;
+}
+
+.disabled {
+  --primary-text-color: var(--disabled-control-text-color);
+  --secondary-text-color: var(--disabled-control-text-color);
+}
+
+.select:first-of-type .select-element {
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.select:last-of-type .select-element {
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  border-bottom-width: 1px;
+}
+
+:global(.sidebar) .select .select-element {
+  border-radius: 0;
+}
+
+.select::after {
+  border: 0.375em solid transparent;
+  border-top-color: var(--secondary-text-color);
+  content: '';
+  box-sizing: content-box;
+  position: absolute;
+  top: 50%;
+  right: var(--inset-inline);
+  transform: translate(50%, -25%);
+  height: 0;
+  width: 0;
+  border-bottom-width: 0;
+  pointer-events: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-element {
+  cursor: pointer;
+  color: transparent;
+  font-size: 1em;
+  width: 100%;
+  height: 2.75em;
+  z-index: 1;
+  text-align: right;
+  padding: 0 calc(2 * var(--inset-inline)) 0 var(--inset-inline);
+  appearance: none;
+  border-radius: 0;
+  border-bottom-width: 0;
+}
+
+.hasValue .select-element,
+.select-element:valid {
+  color: var(--secondary-text-color);
+}
+
+.disabled .select-element {
+  cursor: not-allowed;
+}
+
+.label {
+  color: var(--primary-text-color);
+  padding: 0 var(--inset-inline);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+}

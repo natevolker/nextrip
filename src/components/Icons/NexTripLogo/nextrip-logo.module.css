@@ -1,0 +1,22 @@
+.outline {
+  fill: var(--secondary-label-color);
+}
+
+.hands {
+  fill: var(--secondary-label-color);
+}
+
+.circle {
+  fill: none;
+  stroke: var(--secondary-label-color);
+  stroke-width: 1;
+}
+
+:global(a.active) .circle {
+  fill: var(--control-accent-color);
+  stroke: var(--control-accent-color);
+}
+
+:global(a.active) .hands {
+  fill: #fff;
+}

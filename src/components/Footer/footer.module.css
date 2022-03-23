@@ -1,0 +1,11 @@
+.footer {
+  text-align: center;
+  grid-area: footer;
+  background-color: var(--header-background-color);
+  color: var(--text-on-primary);
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--control-accent-color);
+}
