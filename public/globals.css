@@ -404,29 +404,6 @@ thead {
   position: relative;
 }
 
-thead::before,
-thead::after {
-  content: '';
-  position: absolute;
-  top: -1px;
-  right: -1px;
-  left: -1px;
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-  display: block;
-  z-index: 0;
-}
-
-thead::before {
-  background-color: var(--sidebar-background-color);
-  bottom: -1px;
-}
-
-thead::after {
-  bottom: 0px;
-  background-color: var(--control-color);
-  border: 1px solid var(--border-color);
-}
-
 thead > tr {
   position: relative;
   z-index: 1;

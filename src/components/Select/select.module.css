@@ -54,6 +54,10 @@
   appearance: none;
   border-radius: 0;
   border-bottom-width: 0;
+  dir: rtl;
+}
+.select-element option {
+  dir: ltr;
 }
 
 .hasValue .select-element,
